@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   libft.h                                            :+:    :+:            */
+/*   libvec.h                                           :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: pacovali <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
@@ -28,12 +28,16 @@ typedef struct	s_vec3
 	long double	z;
 }				t_vec3;
 
-/* general purpose functions */
+/*
+**general purpose functions
+*/
 
 long double		deg_to_rad(long double degrees);
 long double		rad_to_deg(long double radians);
 
-/* 2D vectors */
+/*
+**2D vectors
+*/
 
 t_vec2			v2_a_to_b(t_vec2 a, t_vec2 b);
 t_vec2			v2_add(t_vec2 a, t_vec2 b);
@@ -48,13 +52,18 @@ t_vec2			v2_new_null(void);
 t_vec2			v2_new_val(long double x, long double y);
 t_vec2			v2_norm(t_vec2 v);
 t_vec2			v2_reflect(t_vec2 v, t_vec2 n);
+long double		v2_reflectance(t_vec2 v, t_vec2 n, long double k1,
+					long double k2);
+t_vec2			v2_refract(t_vec2 v, t_vec2 n, long double k1, long double k2);
 void			v2_rotate(t_vec2 *v, long double degrees);
 t_vec2			v2_sub(t_vec2 a, t_vec2 b);
 t_vec2			v2_to_len(t_vec2 v, long double new_len);
 t_vec2			v2_x_num(t_vec2 a, long double n);
 t_vec2			v2_x_v2(t_vec2 a, t_vec2 b);
 
-/* 3d vectors */
+/*
+** 3d vectors
+*/
 
 t_vec3			v3_a_to_b(t_vec3 a, t_vec3 b);
 t_vec3			v3_add(t_vec3 a, t_vec3 b);
@@ -70,6 +79,9 @@ t_vec3			v3_new_null(void);
 t_vec3			v3_new_val(long double x, long double y, long double z);
 t_vec3			v3_norm(t_vec3 v);
 t_vec3			v3_reflect(t_vec3 v, t_vec3 n);
+long double		v3_reflectance(t_vec3 v, t_vec3 n, long double k1,
+					long double k2);
+t_vec3			v3_refract(t_vec3 v, t_vec3 n, long double k1, long double k2);
 void			v3_rotate_xyz(t_vec3 *v, t_vec3 rotation);
 void			v3_rotate_zyx(t_vec3 *v, t_vec3 rotation);
 t_vec3			v3_sub(t_vec3 a, t_vec3 b);

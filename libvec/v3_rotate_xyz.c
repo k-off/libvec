@@ -16,22 +16,22 @@ static void	v3_rotation(t_vec3 *v, int axis, long double degrees)
 {
 	t_vec3		r;
 	long double	radians;
-	
+
 	r.x = v->x;
 	r.y = v->y;
 	r.z = v->z;
 	radians = deg_to_rad(degrees);
-	if(axis == 1)
+	if (axis == 1)
 	{
 		r.y = v->y * cos(radians) - v->z * sin(radians);
 		r.z = v->y * sin(radians) + v->z * cos(radians);
 	}
-	if(axis == 2)
+	if (axis == 2)
 	{
 		r.x = v->x * cos(radians) - v->z * sin(radians);
 		r.z = v->x * sin(radians) + v->z * cos(radians);
 	}
-	if(axis == 3)
+	if (axis == 3)
 	{
 		r.x = v->x * cos(radians) - v->y * sin(radians);
 		r.y = v->x * sin(radians) + v->y * cos(radians);
@@ -39,7 +39,7 @@ static void	v3_rotation(t_vec3 *v, int axis, long double degrees)
 	*v = r;
 }
 
-void	v3_rotate_xyz(t_vec3 *v, t_vec3 rotation)
+void		v3_rotate_xyz(t_vec3 *v, t_vec3 rotation)
 {
 	if (rotation.x)
 		v3_rotation(v, 1, rotation.x);

@@ -14,5 +14,5 @@
 
 long double		rad_to_deg(long double radians)
 {
-	return(radians * 180 / M_PI);
+	return (radians * 180 / M_PI);
 }

@@ -17,7 +17,7 @@ t_vec2	v2_reflect(t_vec2 v, t_vec2 n)
 	t_vec2	r;
 
 	n = v2_norm(n);
-	r = v2_x_num(n, -2.0 * v2_dot(v, n));
+	r = v2_x_num(n, -2.0 * v2_dot(n, v));
 	r = v2_add(r, v);
 	return (n);
 }

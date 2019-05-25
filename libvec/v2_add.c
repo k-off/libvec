@@ -15,7 +15,7 @@
 t_vec2		v2_add(t_vec2 a, t_vec2 b)
 {
 	t_vec2	v;
-	
+
 	v.x = a.x + b.x;
 	v.y = a.y + b.y;
 	return (v);

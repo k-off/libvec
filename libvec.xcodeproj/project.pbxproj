@@ -48,6 +48,10 @@
 		D39E8251229885FE00D1AA73 /* v2_isequal.c in Sources */ = {isa = PBXBuildFile; fileRef = D39E8250229885FE00D1AA73 /* v2_isequal.c */; };
 		D39E8253229886B500D1AA73 /* v3_new_val.c in Sources */ = {isa = PBXBuildFile; fileRef = D39E8252229886B500D1AA73 /* v3_new_val.c */; };
 		D39E82552298871400D1AA73 /* v2_new_val.c in Sources */ = {isa = PBXBuildFile; fileRef = D39E82542298871400D1AA73 /* v2_new_val.c */; };
+		D3EC9B68229939C1006CF2E1 /* v3_refract.c in Sources */ = {isa = PBXBuildFile; fileRef = D3EC9B67229939C1006CF2E1 /* v3_refract.c */; };
+		D3EC9B6A22993D16006CF2E1 /* v2_refract.c in Sources */ = {isa = PBXBuildFile; fileRef = D3EC9B6922993D16006CF2E1 /* v2_refract.c */; };
+		D3EC9B6C22993E42006CF2E1 /* v3_reflectance.c in Sources */ = {isa = PBXBuildFile; fileRef = D3EC9B6B22993E42006CF2E1 /* v3_reflectance.c */; };
+		D3EC9B6E22994109006CF2E1 /* v2_reflectance.c in Sources */ = {isa = PBXBuildFile; fileRef = D3EC9B6D22994109006CF2E1 /* v2_reflectance.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -106,6 +110,10 @@
 		D39E8250229885FE00D1AA73 /* v2_isequal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = v2_isequal.c; sourceTree = "<group>"; };
 		D39E8252229886B500D1AA73 /* v3_new_val.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = v3_new_val.c; sourceTree = "<group>"; };
 		D39E82542298871400D1AA73 /* v2_new_val.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = v2_new_val.c; sourceTree = "<group>"; };
+		D3EC9B67229939C1006CF2E1 /* v3_refract.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = v3_refract.c; sourceTree = "<group>"; };
+		D3EC9B6922993D16006CF2E1 /* v2_refract.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = v2_refract.c; sourceTree = "<group>"; };
+		D3EC9B6B22993E42006CF2E1 /* v3_reflectance.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = v3_reflectance.c; sourceTree = "<group>"; };
+		D3EC9B6D22994109006CF2E1 /* v2_reflectance.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = v2_reflectance.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +163,8 @@
 				D39E82542298871400D1AA73 /* v2_new_val.c */,
 				D39E821C22986B3700D1AA73 /* v2_norm.c */,
 				D39E823C22987BD000D1AA73 /* v2_reflect.c */,
+				D3EC9B6D22994109006CF2E1 /* v2_reflectance.c */,
+				D3EC9B6922993D16006CF2E1 /* v2_refract.c */,
 				D39E821E22986B8400D1AA73 /* v2_rotate.c */,
 				D39E822E2298777100D1AA73 /* v2_sub.c */,
 				D39E822C2298770300D1AA73 /* v2_to_len.c */,
@@ -174,6 +184,8 @@
 				D39E8252229886B500D1AA73 /* v3_new_val.c */,
 				D39E821A22986AA300D1AA73 /* v3_norm.c */,
 				D39E823A22987B1800D1AA73 /* v3_reflect.c */,
+				D3EC9B6B22993E42006CF2E1 /* v3_reflectance.c */,
+				D3EC9B67229939C1006CF2E1 /* v3_refract.c */,
 				D39E82022298642700D1AA73 /* v3_rotate_xyz.c */,
 				D39E82042298663400D1AA73 /* v3_rotate_zyx.c */,
 				D39E82282298769F00D1AA73 /* v3_sub.c */,
@@ -252,11 +264,14 @@
 				D39E824122987F2F00D1AA73 /* v3_angle_rad.c in Sources */,
 				D39E822B229876FE00D1AA73 /* v3_to_len.c in Sources */,
 				D39E821D22986B3700D1AA73 /* v2_norm.c in Sources */,
+				D3EC9B6C22993E42006CF2E1 /* v3_reflectance.c in Sources */,
 				D39E823922987A5200D1AA73 /* v3_cross.c in Sources */,
 				D39E824D229882BF00D1AA73 /* v2_distance.c in Sources */,
 				D39E8237229879C300D1AA73 /* v2_new_null.c in Sources */,
 				D39E82332298783800D1AA73 /* v2_a_to_b.c in Sources */,
+				D3EC9B6A22993D16006CF2E1 /* v2_refract.c in Sources */,
 				D39E82352298796300D1AA73 /* v3_new_null.c in Sources */,
+				D3EC9B6E22994109006CF2E1 /* v2_reflectance.c in Sources */,
 				D39E823F22987D5C00D1AA73 /* v3_angle_deg.c in Sources */,
 				D39E8253229886B500D1AA73 /* v3_new_val.c in Sources */,
 				D39E822D2298770300D1AA73 /* v2_to_len.c in Sources */,
@@ -266,6 +281,7 @@
 				D39E82492298802D00D1AA73 /* v2_isnull.c in Sources */,
 				D39E823D22987BD000D1AA73 /* v2_reflect.c in Sources */,
 				D39E822F2298777100D1AA73 /* v2_sub.c in Sources */,
+				D3EC9B68229939C1006CF2E1 /* v3_refract.c in Sources */,
 				D39E82552298871400D1AA73 /* v2_new_val.c in Sources */,
 				D39E82092298677300D1AA73 /* v2_add.c in Sources */,
 				D39E8207229866EA00D1AA73 /* v3_add.c in Sources */,

@@ -17,7 +17,7 @@ t_vec3	v3_reflect(t_vec3 v, t_vec3 n)
 	t_vec3	r;
 
 	n = v3_norm(n);
-	r = v3_x_num(n, -2.0 * v3_dot(v, n));
+	r = v3_x_num(n, -2.0 * v3_dot(n, v));
 	r = v3_add(r, v);
 	return (n);
 }

@@ -15,7 +15,7 @@
 t_vec3		v3_add(t_vec3 a, t_vec3 b)
 {
 	t_vec3	v;
-	
+
 	v.x = a.x + b.x;
 	v.y = a.y + b.y;
 	v.z = a.z + b.z;

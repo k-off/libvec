@@ -1,15 +1,19 @@
-//
-//  main.c
-//  libvec
-//
-//  Created by Pavel Covaliov on 24/05/2019.
-//  Copyright © 2019 Pavel Covaliov. All rights reserved.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   libvec.h                                           :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: pacovali <marvin@codam.nl>                   +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2019/01/12 18:56:23 by pacovali      #+#    #+#                 */
+/*   Updated: 2019/01/23 17:53:36 by pacovali      ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "libvec.h"
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-	// insert code here...
-	printf("Hello, World!\n");
-	return 0;
+int		main(void)
+{
+	return (0);
 }
