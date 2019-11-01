@@ -12,7 +12,11 @@
 
 #include "libvec.h"
 
-long double		deg_to_rad(long double degrees)
+REAL		deg_to_rad(REAL degrees)
 {
+	while (degrees > 360)
+		degrees -= 360;
+	while (degrees < -360)
+		degrees += 360;
 	return (degrees * M_PI / 180);
 }

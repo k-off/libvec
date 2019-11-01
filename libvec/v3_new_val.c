@@ -12,7 +12,7 @@
 
 #include "libvec.h"
 
-t_vec3	v3_new_val(long double x, long double y, long double z)
+t_vec3	v3_new_val(REAL x, REAL y, REAL z)
 {
 	t_vec3	v;
 

@@ -12,24 +12,22 @@
 
 #include "libvec.h"
 
-static long double	calc_res(long double cos_v, long double cos_r,
-						long double k1, long double k2)
+static REAL	calc_res(REAL cos_v, REAL cos_r, REAL k1, REAL k2)
 {
-	long double	r_orth;
-	long double	r_par;
+	REAL	r_orth;
+	REAL	r_par;
 
 	r_orth = (k1 * cos_v - k2 * cos_r) / (k1 * cos_v + k2 * cos_r);
 	r_par = (k2 * cos_v - k1 * cos_r) / (k2 * cos_v + k1 * cos_r);
 	return ((r_orth * r_orth + r_par * r_par) / 2);
 }
 
-long double			v2_reflectance(t_vec2 v, t_vec2 n, long double k1,
-							long double k2)
+REAL			v2_reflectance(t_vec2 v, t_vec2 n, REAL k1, REAL k2)
 {
-	long double	ratio;
-	long double	cos_v;
-	long double	cos_r;
-	long double	sin_r2;
+	REAL	ratio;
+	REAL	cos_v;
+	REAL	cos_r;
+	REAL	sin_r2;
 
 	ratio = k1 / k2;
 	n = v2_norm(n);

@@ -12,10 +12,10 @@
 
 #include "libvec.h"
 
-static void	v3_rotation(t_vec3 *v, int axis, long double degrees)
+static void	v3_rotation(t_vec3 *v, int axis, REAL degrees)
 {
 	t_vec3		r;
-	long double	radians;
+	REAL		radians;
 
 	r.x = v->x;
 	r.y = v->y;

@@ -12,7 +12,7 @@
 
 #include "libvec.h"
 
-t_vec3	v3_to_len(t_vec3 v, long double new_len)
+t_vec3	v3_to_len(t_vec3 v, REAL new_len)
 {
 	v = v3_norm(v);
 	return (v3_x_num(v, new_len));

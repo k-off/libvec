@@ -14,7 +14,7 @@
 
 t_vec2		v2_norm(t_vec2 v)
 {
-	long double	len;
+	float	len;
 
 	len = v2_len(v);
 	v.x /= len;

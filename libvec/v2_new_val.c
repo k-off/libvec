@@ -12,7 +12,7 @@
 
 #include "libvec.h"
 
-t_vec2	v2_new_val(long double x, long double y)
+t_vec2	v2_new_val(REAL x, REAL y)
 {
 	t_vec2	v;
 

@@ -12,7 +12,7 @@
 
 #include "libvec.h"
 
-long double		v2_len(t_vec2 v)
+REAL		v2_len(t_vec2 v)
 {
-	return (sqrtl(v2_dot(v, v)));
+	return ((sizeof(REAL) == 4) ? sqrtf(v2_dot(v, v)) : sqrt(v2_dot(v, v)));
 }

@@ -12,7 +12,7 @@
 
 #include "libvec.h"
 
-long double	v2_dot(t_vec2 a, t_vec2 b)
+REAL	v2_dot(t_vec2 a, t_vec2 b)
 {
 	return (a.x * b.x + a.y * b.y);
 }

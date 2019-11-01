@@ -12,7 +12,14 @@
 
 #include "libvec.h"
 
-long double		rad_to_deg(long double radians)
+REAL		rad_to_deg(REAL radians)
 {
+	REAL max_rad;
+
+	max_rad = 2 * M_PI;
+	while (radians > max_rad)
+		radians -= max_rad;
+	while (radians < -max_rad)
+		radians += max_rad;
 	return (radians * 180 / M_PI);
 }

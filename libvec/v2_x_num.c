@@ -12,7 +12,7 @@
 
 #include "libvec.h"
 
-t_vec2	v2_x_num(t_vec2 a, long double n)
+t_vec2	v2_x_num(t_vec2 a, REAL n)
 {
 	a.x *= n;
 	a.y *= n;

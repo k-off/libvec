@@ -12,13 +12,13 @@
 
 #include "libvec.h"
 
-t_vec3	v3_refract(t_vec3 v, t_vec3 n, long double k1, long double k2)
+t_vec3	v3_refract(t_vec3 v, t_vec3 n, REAL k1, REAL k2)
 {
-	t_vec3		r;
-	long double	ratio;
-	long double	cos_v;
-	long double	cos_r;
-	long double	sin_r2;
+	t_vec3	r;
+	REAL	ratio;
+	REAL	cos_v;
+	REAL	cos_r;
+	REAL	sin_r2;
 
 	ratio = k1 / k2;
 	n = v3_norm(n);

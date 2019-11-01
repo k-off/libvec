@@ -14,7 +14,7 @@
 
 t_vec3		v3_norm(t_vec3 v)
 {
-	long double	len;
+	REAL	len;
 
 	len = v3_len(v);
 	v.x /= len;

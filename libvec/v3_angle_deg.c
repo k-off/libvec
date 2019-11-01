@@ -12,9 +12,9 @@
 
 #include "libvec.h"
 
-long double	v3_angle_deg(t_vec3 a, t_vec3 b)
+REAL	v3_angle_deg(t_vec3 a, t_vec3 b)
 {
-	long double		rad;
+	REAL		rad;
 
 	rad = v3_angle_rad(a, b);
 	if (rad == 7)

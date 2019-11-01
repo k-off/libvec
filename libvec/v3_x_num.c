@@ -12,7 +12,7 @@
 
 #include "libvec.h"
 
-t_vec3	v3_x_num(t_vec3 a, long double n)
+t_vec3	v3_x_num(t_vec3 a, REAL n)
 {
 	a.x *= n;
 	a.y *= n;

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   v3_rotate_xyz.c                                    :+:    :+:            */
+/*   v3_rotate_y.c                                      :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: pacovali <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
@@ -12,39 +12,16 @@
 
 #include "libvec.h"
 
-static void	v3_rotation(t_vec3 *v, int axis, REAL degrees)
+void		v3_rotate_y(t_vec3 *v, REAL y)
 {
-	t_vec3		r;
+	t_vec3	r;
 	REAL	radians;
 
 	r.x = v->x;
 	r.y = v->y;
 	r.z = v->z;
-	radians = deg_to_rad(degrees);
-	if (axis == 1)
-	{
-		r.y = v->y * cos(radians) - v->z * sin(radians);
-		r.z = v->y * sin(radians) + v->z * cos(radians);
-	}
-	if (axis == 2)
-	{
-		r.x = v->x * cos(radians) - v->z * sin(radians);
-		r.z = v->x * sin(radians) + v->z * cos(radians);
-	}
-	if (axis == 3)
-	{
-		r.x = v->x * cos(radians) - v->y * sin(radians);
-		r.y = v->x * sin(radians) + v->y * cos(radians);
-	}
+	radians = deg_to_rad(y);
+	r.x = v->x * cos(radians) - v->z * sin(radians);
+	r.z = v->x * sin(radians) + v->z * cos(radians);
 	*v = v3_norm(r);
-}
-
-void		v3_rotate_xyz(t_vec3 *v, t_vec3 rotation)
-{
-	if (rotation.x)
-		v3_rotation(v, 1, rotation.x);
-	if (rotation.y)
-		v3_rotation(v, 2, rotation.y);
-	if (rotation.z)
-		v3_rotation(v, 3, rotation.z);
 }

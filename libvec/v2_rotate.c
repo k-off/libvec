@@ -12,10 +12,10 @@
 
 #include "libvec.h"
 
-void	v2_rotate(t_vec2 *v, long double degrees)
+void	v2_rotate(t_vec2 *v, REAL degrees)
 {
-	t_vec2		r;
-	long double	radians;
+	t_vec2	r;
+	REAL	radians;
 
 	radians = deg_to_rad(degrees);
 	r.x = v->x * cos(radians) - v->y * sin(radians);

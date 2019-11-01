@@ -12,7 +12,7 @@
 
 #include "libvec.h"
 
-long double	v3_angle_rad(t_vec3 a, t_vec3 b)
+REAL	v3_angle_rad(t_vec3 a, t_vec3 b)
 {
 	if (v3_isnull(a))
 		return (7);

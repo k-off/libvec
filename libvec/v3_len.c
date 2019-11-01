@@ -12,7 +12,7 @@
 
 #include "libvec.h"
 
-long double		v3_len(t_vec3 v)
+REAL		v3_len(t_vec3 v)
 {
-	return (sqrtl(v3_dot(v, v)));
+	return ((sizeof(REAL) == 4) ? sqrtf(v3_dot(v, v)) : sqrt(v3_dot(v, v)));
 }

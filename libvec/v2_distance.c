@@ -12,7 +12,7 @@
 
 #include "libvec.h"
 
-long double	v2_distnce(t_vec2 a, t_vec2 b)
+REAL	v2_distnce(t_vec2 a, t_vec2 b)
 {
 	return (v2_len(v2_sub(a, b)));
 }
